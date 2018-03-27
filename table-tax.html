@@ -1,0 +1,19 @@
+<h2>Tax Details</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>id</td>
+            <td>Rate</td>
+            <td>operation</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="tax in products">
+            <td>{{ tax.name }}</td>
+            <td>{{ tax.id }}</td>
+            <td>{{ tax.rate }}</td>
+            <td><button ng-click="createFunc()">create</button> <button ng-click="updateFunc()">update</button> <button ng-click="deleteFunc()"></button></td>
+        </tr>
+    </tbody>
+</table>
